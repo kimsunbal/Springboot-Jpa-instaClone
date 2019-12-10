@@ -28,7 +28,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 		http.csrf().disable();
 		http.cors().disable();
 		http.authorizeRequests() // 권한요청
-		.antMatchers("/user/**","/follow/**","/images/**")
+		.antMatchers("/user/**","/follow/**","/image/**")
 		.authenticated()
 		.anyRequest()
 		.permitAll()

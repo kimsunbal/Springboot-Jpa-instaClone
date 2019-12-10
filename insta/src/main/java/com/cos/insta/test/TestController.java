@@ -9,4 +9,12 @@ public class TestController {
 	public String testHome() {
 		return "home";
 	}
+	@GetMapping("/test/login")
+	public String testLogin() {
+		return "auth/login";
+	}
+	@GetMapping("/test/join")
+	public String testJoin() {
+		return "auth/join";
+	}
 }
