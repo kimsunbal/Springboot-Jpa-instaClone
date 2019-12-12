@@ -24,10 +24,11 @@ public class UserDetailService implements UserDetailsService{
 		UserDetail userDetails = null;
 		
 		if(user != null) {
+			System.out.println("유저네임 있어");
 			userDetails = new UserDetail();
 			userDetails.setUser(user);
 		}else {
-			throw new UsernameNotFoundException("유저네임이 없어요: "+username);
+			throw new UsernameNotFoundException("Not Found 'username'");
 		}
 		return userDetails;
 	}

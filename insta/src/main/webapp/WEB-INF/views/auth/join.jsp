@@ -35,9 +35,9 @@
       </div>
       <div class="login__box">
         <span class="login__text">
-          Don't have an account? <br />
+          Do you have an account? <br />
         </span>
-        <a class="login__blue-link" href="#">Sign up</a>
+        <a class="login__blue-link" href="/auth/login">Log in</a>
       </div>
       <div class="login__t-box">
         <span class="login__text">

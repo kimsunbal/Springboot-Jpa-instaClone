@@ -28,7 +28,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 		http.csrf().disable();
 		http.cors().disable();
 		http.authorizeRequests() // 권한요청
-		.antMatchers("/user/**","/follow/**","/image/**")
+		.antMatchers("/","/user/**","/follow/**","/image/**")
 		.authenticated()
 		.anyRequest()
 		.permitAll()
@@ -36,7 +36,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 		.formLogin()
 		.loginPage("/auth/login")
 		.loginProcessingUrl("/auth/loginProc")
-		.defaultSuccessUrl("/test/feed")
+		.defaultSuccessUrl("/")
 		.failureUrl("/auth/login");
 	}
 
